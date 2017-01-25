@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Counter Project</title>
+  </head>
+  <body>
+
+  <header class = "text-center" id = "SMPGR">
+      <nav id = "header-nav" class="navbar navbar-default">
+          <div id = "SMPGR">Counter Project Grodno</div>
+        </nav>
+    </header>
+    <h1></h1>
+
+    <div class = "container">
+        <ui-view>
+            <div class="text-center initial-loading">
+                     <h2>Loading Site...</h2>
+            </div> 
+         </ui-view>
+    </div>
+
+
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/modules/menuapp.module.js"></script>
+    <script src="src/modules/data.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'MenuApp' module artifacts -->
+    <script src="src/components/categories.component.js"></script>
+    <script src="src/components/lines.component.js"></script>
+    <script src="src/components/shifts.component.js"></script>
+    <script src="src/controllers/choise.controller.js"></script>
+    <script src="src/controllers/lines.controller.js"></script>
+    <script src="src/controllers/report.controller.js"></script>
+    <script src="src/services/data.service.js"></script>
+
+  </body>
+</html>

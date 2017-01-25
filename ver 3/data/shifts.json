@@ -1,0 +1,25 @@
+{
+   "Present_day_shift":{
+    "name": "Present day shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00"
+  },
+
+   "Present_night_shift":{
+    "name": "Present night shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00"
+  },
+
+   "Previous_day_shift":{
+    "name": "Previous day shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00"
+  },
+
+   "Previous_night_shift":{
+    "name": "Previous night shift",
+    "duration_hr": "12",
+    "from_to": "7:00 - 19:00"
+  }
+}

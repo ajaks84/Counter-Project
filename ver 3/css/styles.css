@@ -1,0 +1,36 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  height:1000px;
+  background-color: #0000ff;
+}
+
+#SMPGR {
+  float: center;
+  font-size: 2em;
+  color: white;
+}
+
+.navbar{
+  background-color: #3333ff;
+}
+
+button {
+  
+  margin-left: 25%;
+  margin-bottom: 20px;
+  height: 70px;
+  width: 50%;
+}
+
+.minihdr{
+  font-size: 2em;
+  color: white;
+}
+
+.report{
+  float: center;
+  font-size: 2em;
+  color: white;
+
+}
+
