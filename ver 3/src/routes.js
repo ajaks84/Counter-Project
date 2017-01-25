@@ -22,7 +22,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
         lines: ['DataService', function (DataService) {
                 return DataService.getLines();
               }]
-              }
+         }
 
   })
 
@@ -37,7 +37,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
          shifts: ['DataService', function (DataService) {
                 return DataService.getShifts();
               }]
-}
+         }
 
   })
 
@@ -46,7 +46,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     templateUrl: 'src/templates/report.template.html',
     controller: 'ReportController as rptCtrl',
     resolve: {
-         line: ['$stateParams', function($stateParams){
+        line: ['$stateParams', function($stateParams){
                   //console.log($stateParams.line);                  
                   return $stateParams.line
               }],
@@ -55,16 +55,12 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
                   return $stateParams.shift
               }],
    shiftData: ['DataService', function (DataService) {
-                //console.log(DataService.getShiftData());
-                return DataService.getShiftData();
+                  //console.log(DataService.getShiftData());
+                  return DataService.getShiftData();
               }]
-
-  }
+         }
 
 });
-
-
-
  
 }
 

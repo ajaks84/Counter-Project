@@ -11,10 +11,7 @@ function ChoiseController(lineName,shifts) {
 
   chCtrl.lineName = lineName;
   chCtrl.shifts = shifts;
-  chCtrl.stub = 'stub';
   
-  //console.log('lineName+: '+lineName);
-  //console.log('shifts: ');
   //console.log(shifts);
 }
 

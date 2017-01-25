@@ -8,13 +8,14 @@ angular.module('MenuApp')
 ReportController.$inject = ['line','shift',"shiftData"];
 function ReportController(line,shift,shiftData) {
   var rptCtrl = this;
+
   rptCtrl.line = line;
   rptCtrl.shift = shift;
   rptCtrl.shiftData = shiftData;
-
   rptCtrl.display = {};
-  console.log(rptCtrl.shift);
-  console.log(rptCtrl.shiftData);
+
+  //console.log(rptCtrl.shift);
+  //console.log(rptCtrl.shiftData);
   
   switch(rptCtrl.shift) {
 	    case 'Present day shift':
@@ -30,7 +31,6 @@ function ReportController(line,shift,shiftData) {
         rptCtrl.display = rptCtrl.shiftData.Previous_night_shift;
          	 break;
 }
- console.log(rptCtrl.display);
 
 }
 

@@ -8,54 +8,27 @@ DataService.$inject = ['$http']
 function DataService($http) {
   var service = this;
 
-  var lines = [];
-
-  var shifts = [];
-
-  var shiftData = [];
-
   service.getLines = function () {
-
-    //console.log("get lines");
-
-          return $http({method: "GET",
-                        url: 'data/grodno.lines.json'
-                        })
-                          .then(function (result) {
-                          lines=result.data;
-                          //console.log("lines");
-                          //console.log(lines);
-                          return lines;     
+          return $http.get('data/grodno.lines.json')
+                      .then(function (result) {
+                          return result.data;     
     });
   };
 
    service.getShifts = function () {
-
-    //console.log("get shifts");
-
-          return $http({method: "GET",
-                        url: 'data/shifts.json'
-                        })
-                          .then(function (result) {
-                          shifts=result.data;
-                          //console.log("shifts");
-                          //console.log(shifts);
-                          return shifts;     
+          return $http.get('data/shifts.json')
+                      .then(function (result) {
+                          return result.data;     
     });
   };
 
   service.getShiftData = function (shift) {
-
-          return $http.get('data/shift_data.json')
+          return $http.get('data/shift.data.json')
                       .then(function (result) {
-                          shiftData=result.data;
-                          //console.log("shift data");
-                          //console.log(shiftData);
-                          return shiftData;     
+                          return result.data;     
     });
   };
 
-
-   }
+}
 
 })();
